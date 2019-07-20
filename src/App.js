@@ -88,7 +88,7 @@ class App extends Component {
     reader.onload = async () => {
       let file_string = window.btoa(reader.result)
       console.log(file_string)
-      await fetch('https://igfl5675p8.execute-api.eu-west-2.amazonaws.com/prod/upload-file-to-s3', {
+      await fetch('<Your API endpoint>', {
         method: 'POST',
         headers: {
           'Accept': `${file.type}`,
